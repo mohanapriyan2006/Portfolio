@@ -1,0 +1,78 @@
+.nav-container{
+    width: auto;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    z-index: 9999;
+}
+
+.nav-container .logo{
+    height: 25px;
+    width: 70px;
+    margin-top: 7px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-container .nav-bar{
+    width: 460px;
+    height: 40px;
+    display: flex;
+    border: none;
+    border-radius: 80px;
+    justify-content: space-around;
+    -webkit-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.75);
+box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.75);
+}
+.nav-container .nav-bar ul{
+    display: contents;
+    list-style: none;
+}
+
+.nav-container .nav-bar ul li{
+    margin-top: 4px;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-container .nav-bar ul li:hover{
+    height: 22px;
+    border: dotted rgb(155, 155, 155) 1.5px ;
+    background-color: #EAEAEA;
+    border-radius: 25px;
+}
+
+.nav-container .git-btn{
+    background-color: black;
+    border: none;
+    border-radius: 90px;
+    height: 40px;
+    width: 150px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.75);
+box-shadow: -3px -1px 89px 1px rgba(0,0,0,0.75);
+}
+
+.nav-container .git-btn:hover{
+    border: solid rgba(170, 254, 44, 0.877) 1.5px;
+}
+
+.nav-container .git-btn span{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.nav-container .git-btn img{
+    position: relative;
+    top: 20%;
+}
