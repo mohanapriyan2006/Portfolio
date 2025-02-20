@@ -1,5 +1,5 @@
 .nav-container{
-    width: 100%;
+    width: auto;
     height: 2rem;
     display: flex;
     flex-direction: row;
@@ -23,9 +23,9 @@
     border: none;
     border-radius: 80px;
     justify-content: space-around;
-    -webkit-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.75);
--moz-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.75);
-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.55);
+-moz-box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.55);
+box-shadow: -3px 1px 89px 1px rgba(0,0,0,0.45);
 }
 .nav-container .nav-bar ul{
     display: contents;

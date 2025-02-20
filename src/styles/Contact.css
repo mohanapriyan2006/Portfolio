@@ -1,0 +1,24 @@
+.contact-page{
+    margin-top: 100px;
+}
+
+.contact-page .contact {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.contact-page .contact .contact-form form{
+    width: 80%;
+    text-align: start;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-page .contact .contact-form form div{
+    display: flex;
+    flex-direction: row;
+}
