@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+
+.home {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.home .home-content{
+    text-align: start;
+    padding: 140px 5px;
+    margin-left: -50px;
+}
+
+.home .home-content h2{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    margin-bottom: -20px;
+}
+
+.home .home-content h1{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.home .home-content p{
+    font-family: "Sometype Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: -20px;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.btns .btn-1{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #369EFF;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btns .btn-1:hover{
+    background-color: #0084ff;
+    scale: 105%;
+}
+
+.btns .btn-2{
+    width: 140px;
+    height: 40px;
+    border: solid #45a5ff 3px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btns .btn-2:hover{
+    background-color: #52abff;
+    scale: 105%;
+    color: white;
+}
+
+.home .home-img{
+    height: 500px;
+    width: 580px;
+    margin-top: 70px;
+    position: relative;
+    left: 6%;
+}
