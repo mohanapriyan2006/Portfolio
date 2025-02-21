@@ -47,7 +47,7 @@ const Contact = () => {
                     <div className="contact-detail">
 
                         <p> mohanapriyan.m2006@gmail.com</p>
-                        <p> Coimbatore, Tamil Nadu</p>
+                        <p style={{width: '150%'}}> Coimbatore, Tamil Nadu</p>
                         <p> +91 9159604934</p>
                     </div>
                     </div>

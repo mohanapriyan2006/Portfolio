@@ -11,6 +11,7 @@
     gap: 10px;
 }
 
+
 .contact-page .contact .contact-form form{
     width: 120%;
     text-align: start;
@@ -71,17 +72,22 @@
     text-align: start;
     position: relative;
     left: -8%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .contact-details .contact-detail-div{
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 5px;
 }
 
 .contact-details .contact-detail-div .contact-img{
     display: grid;
     grid-template-columns: 100%;
     margin-left: 10px;
+    gap: 30px;
 }
 
 .contact-details .contact-detail-div .contact-detail{
@@ -90,7 +96,8 @@
     grid-template-columns: 100%;
     position: relative;
     right: 60%;
-    top: -10%;
+    top: -2%;
+    gap: 30px;
 }
 
 .contact-details h5{
