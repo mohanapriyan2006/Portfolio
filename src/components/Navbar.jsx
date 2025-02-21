@@ -10,10 +10,10 @@ const Navbar = () => {
       <img src={logo} alt='logo' className='logo' />
       <div className='nav-bar'>
         <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a style={{textDecoration: 'none',color: 'black'}} href='#home'>Home</a></li>
+        <li><a style={{textDecoration: 'none',color: 'black'}} href='#about'>About</a></li>
+        <li><a style={{textDecoration: 'none',color: 'black'}} href='#projects'>Projects</a></li>
+        <li><a style={{textDecoration: 'none',color: 'black'}} href='#contact'>Contact</a></li>
 
         </ul>
       </div>

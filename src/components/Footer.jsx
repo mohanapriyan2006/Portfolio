@@ -14,9 +14,9 @@ const Footer = () => {
         </div>
         <p>Made by <b>Mohanapriyan M</b></p>
         <div className="icon-link">
-            <img src={linkedin} alt='icon' />
-            <img src={git} alt='icon' />
-            <img src={mail} alt='icon' />
+            <a href='#'><img src={linkedin} alt='icon' /></a>
+            <a href='#'><img src={git} alt='icon' /></a>
+            <a href='#'><img src={mail} alt='icon' /></a>
         </div>
 
     </footer>

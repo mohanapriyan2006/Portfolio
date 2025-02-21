@@ -9,12 +9,25 @@ import Projects from './components/Projects';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+
+      <section id='home'>
+      <Navbar />
+        <Home />
+      </section>
+
+      <section id='about'>
+        <About />
+      </section>
+
+      <section id='projects'>
+        <Projects />
+      </section>
+
+      <section id='contact'>
+        <Contact />
+      </section>
+
+      <Footer />
     </div>
   );
 }
