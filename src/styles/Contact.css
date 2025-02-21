@@ -1,24 +1,107 @@
 .contact-page{
     margin-top: 100px;
+    margin-bottom: 80px;
 }
 
 .contact-page .contact {
     width: 100%;
     display: flex;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 10px;
 }
 
 .contact-page .contact .contact-form form{
-    width: 80%;
+    width: 120%;
     text-align: start;
     flex-direction: column;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.contact-page .contact .contact-form form div{
-    display: flex;
-    flex-direction: row;
+.contact-page .contact .contact-form form .input-div{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+.contact-page .contact .contact-form form .input-box{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5px;
+}
+
+.contact-page .contact .contact-form form .input-box input{
+    height: 30px;
+    border: solid #75bcff 1.5px;
+    border-radius: 5px;
+}
+
+
+
+.contact-page .contact .contact-form textarea{
+    height: 100px;
+    border: solid #75bcff 1.5px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-page .contact .contact-form button{
+    border: none;
+    background-color: #369EFF;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-page .contact .contact-form button:hover{
+    background-color: #2093ff;
+    scale: 100.5%;
+}
+
+.contact-div{
+    border-left: solid #369EFF 4px;
+    margin: 20px 0;
+}
+
+.contact-details{
+    text-align: start;
+    position: relative;
+    left: -8%;
+}
+
+.contact-details .contact-detail-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contact-details .contact-detail-div .contact-img{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 10px;
+}
+
+.contact-details .contact-detail-div .contact-detail{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    right: 60%;
+    top: -10%;
+}
+
+.contact-details h5{
+    font-size: 27px;
+}
+
+.contact-details p{
+    font-size: 18px;
+}
+
+.contact-details p img{
+    height: 24px;
+    margin-right: 10px;
 }

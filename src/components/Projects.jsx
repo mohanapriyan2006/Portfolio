@@ -38,7 +38,6 @@ const Projects = () => {
           </div>
         </div>
 
-
         <div className="project">
           <img style={{ marginRight: '10px', marginLeft: '0' }} src={mews} alt='img' />
           <div className="content">

@@ -12,23 +12,45 @@ const Contact = () => {
             <div className="contact">
                 <div className="contact-form">
                     <form>
-                        <div>
-                            <label htmlFor="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                            <label htmlFor="subject">Subject</label>
-                            <input type="text" name="subject" id="subject" />
+                        <div className='input-div'>
+
+                            <div className="input-box">
+                                <label htmlFor="email">Email</label>
+                                <input type="email" name="email" id="email" />
+                            </div>
+
+
+                            <div className="input-box">
+                                <label htmlFor="subject">Subject</label>
+                                <input type="text" name="subject" id="subject" />
+                            </div>
+
                         </div>
+                        <div className="input-box">
                             <label htmlFor="message">Message</label>
                             <textarea name="message" id="message"></textarea>
-                            <button type="submit">Send</button>
+                        </div>
+
+                        <button type="submit">Send</button>
                     </form>
                 </div>
                 <div className="contact-div"></div>
                 <div className="contact-details">
                     <h5>Let's Work <span style={{ color: '#0084FF' }}>Together</span></h5>
-                    <p><img src={mail1} alt='img' /> mohanapriyan.m2006@gmail.com</p>
-                    <p><img src={location} alt='img' /> Coimbatore, Tamil Nadu</p>
-                    <p><img src={phone} alt='img' /> +91 9159604934</p>
+                    <div className='contact-detail-div'>
+                    <div className="contact-img">
+
+                        <img src={mail1} alt='img' />
+                        <img src={location} alt='img' />
+                        <img style={{position:'relative',left: '4%'}} src={phone} alt='img' />
+                    </div>
+                    <div className="contact-detail">
+
+                        <p> mohanapriyan.m2006@gmail.com</p>
+                        <p> Coimbatore, Tamil Nadu</p>
+                        <p> +91 9159604934</p>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
