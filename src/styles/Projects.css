@@ -5,6 +5,7 @@
     justify-content: center;
     margin-left: 10px;
     gap: 40px;
+    margin-bottom: 50px;
 }
 
  h4 {
@@ -19,15 +20,15 @@
     border-bottom: solid #369EFF 4px;
     height: 110px;
     width: 100px;
-    margin-top: -165px;
     margin-left: 46%;
     margin-bottom: 40px;
+    margin-top: -110px;
 }
 .projects .title-div{
     border-bottom: solid #369EFF 4px;
     height: 110px;
     width: 100px;
-    margin-top: -200px;
+    margin-top: -150px;
     margin-left: 46%;
 }
 
@@ -36,6 +37,8 @@
     font-family: "Poppins", serif;
     font-weight: 700;
     font-style: normal;
+    margin-left: -15px;
+    margin-bottom: 10px;
     font-size: 24px;
     text-align: start;
 }

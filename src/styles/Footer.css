@@ -1,0 +1,22 @@
+footer{
+    width: auto;
+    height: 50px;
+    background-color: #1e5d98;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+footer .icon-link img{
+    height: 30px;
+    width: 30px;
+}
+
+footer .icon-link{
+    display: flex;
+    gap: 20px;
+}
