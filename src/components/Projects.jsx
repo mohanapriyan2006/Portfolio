@@ -30,8 +30,8 @@ const Projects = () => {
               <li>Implemented seamless client-side interactivity for adding and managing cart items.</li>
             </ul>
             <div className='btns'>
-            <a href='https://e-shop-website-project.netlify.app/' target='new'>
-            <button className='btn-1'>Visit site</button></a>
+              <a href='https://e-shop-website-project.netlify.app/' target='new'>
+                <button className='btn-1'>Visit site</button></a>
               <a href='https://github.com/mohanapriyan2006/EShop' target='new'><button className='btn-2'>
                 Repository</button></a>
             </div>
@@ -41,7 +41,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="project">
+        <div className="project project2">
           <img style={{ marginRight: '10px', marginLeft: '0' }} src={mews} alt='img' />
           <div className="content">
             <p className="title">
@@ -56,8 +56,8 @@ const Projects = () => {
               <li>Designed a mobile-friendly, responsive UI using Bootstrap for smooth accessibility across devices.</li>
             </ul>
             <div className='btns'>
-            <a href='https://mews-newsapp.netlify.app/' target='new'>
-              <button className='btn-1'>Visit site</button></a>
+              <a href='https://mews-newsapp.netlify.app/' target='new'>
+                <button className='btn-1'>Visit site</button></a>
               <a href='https://github.com/mohanapriyan2006/mews-api' target='new'>
                 <button className='btn-2'>
                   Repository</button></a>
@@ -83,8 +83,8 @@ const Projects = () => {
               <a href='https://postup-reactapp.netlify.app/' target='new'>
                 <button className='btn-1'>Visit site</button></a>
               <a href='https://github.com/mohanapriyan2006/postup-api' target='new'>
-              <button className='btn-2'>
-                Repository</button></a>
+                <button className='btn-2'>
+                  Repository</button></a>
             </div>
           </div>
           <img src={postup} alt='img' />
@@ -94,7 +94,7 @@ const Projects = () => {
 
       </div>
 
-      <h4>Designs</h4>
+      <h4 className='design-title'>Designs</h4>
       <div className="title-div">
       </div>
       <div className="designs">

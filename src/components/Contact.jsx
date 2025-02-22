@@ -38,18 +38,18 @@ const Contact = () => {
                 <div className="contact-details">
                     <h5>Let's Work <span style={{ color: '#0084FF' }}>Together</span></h5>
                     <div className='contact-detail-div'>
-                    <div className="contact-img">
+                        <div className="contact-img">
 
-                        <img src={mail1} alt='img' />
-                        <img src={location} alt='img' />
-                        <img style={{position:'relative',left: '4%'}} src={phone} alt='img' />
-                    </div>
-                    <div className="contact-detail">
+                            <img src={mail1} alt='img' />
+                            <img src={location} alt='img' />
+                            <img style={{ position: 'relative', left: '4%' }} src={phone} alt='img' />
+                        </div>
+                        <div className="contact-detail">
 
-                        <p> mohanapriyan.m2006@gmail.com</p>
-                        <p style={{width: '150%'}}> Coimbatore, Tamil Nadu</p>
-                        <p> +91 9159604934</p>
-                    </div>
+                            <p> mohanapriyan.m2006@gmail.com</p>
+                            <p style={{ width: '150%' }}> Coimbatore, Tamil Nadu</p>
+                            <p> +91 9159604934</p>
+                        </div>
                     </div>
                 </div>
             </div>

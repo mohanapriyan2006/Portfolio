@@ -1,9 +1,8 @@
 .about-page {
     margin-top: 80px;
-    margin-bottom: -50px;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 20px;
 }
 
 .about-page .title {
@@ -23,16 +22,16 @@
     text-align: center;
     padding: 10px;
     padding-top: 20px;
-    -webkit-box-shadow: -3px 1px 29px 1px rgba(0,0,0,0.55);
-    -moz-box-shadow: -3px 1px 20px 1px rgba(0,0,0,0.55);
-    box-shadow: -3px 1px 15px 0px rgba(0,0,0,0.20);
+    -webkit-box-shadow: -3px 1px 29px 1px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: -3px 1px 20px 1px rgba(0, 0, 0, 0.55);
+    box-shadow: -3px 1px 15px 0px rgba(0, 0, 0, 0.20);
 }
 
-.techstack p{
+.techstack p {
     margin-top: 0px;
 }
 
-.techstacks{
+.techstacks {
     width: 630px;
     display: flex;
     flex-direction: row;
@@ -42,34 +41,68 @@
     margin-left: 20px;
 }
 
-.techstack-container .title{
+.techstack-container .title {
     margin-left: 20px;
 }
 
 .tools-container {
-    margin: 80px 0;
+    margin-top: 80px;
 }
 
-.tools-container .tools{
+.tools-container .tools {
     margin-top: 35px;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
 }
 
-.tools-container .tools .tool{
+.tools-container .tools .tool {
     height: 70px;
     width: 90px;
     border-radius: 20px;
     justify-content: center;
     text-align: center;
     padding: 10px;
-    -webkit-box-shadow: -3px 1px 29px 1px rgba(0,0,0,0.55);
-    -moz-box-shadow: -3px 1px 20px 1px rgba(0,0,0,0.55);
-    box-shadow: -3px 1px 15px 0px rgba(0,0,0,0.20);
+    -webkit-box-shadow: -3px 1px 29px 1px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: -3px 1px 20px 1px rgba(0, 0, 0, 0.55);
+    box-shadow: -3px 1px 15px 0px rgba(0, 0, 0, 0.20);
 }
 
-.about-tools{
-    margin: 80px 0;
+.about-tools {
+    margin-top: 80px;
     margin-left: -60px;
+}
+
+/* MD */
+@media screen and ((min-width: 700px) and (max-width: 1000px)) {
+    .about-page {
+        scale: 95%;
+        padding: 0;
+    }
+
+    .tools-container {
+        display: none;
+    }
+
+}
+
+/* SM */
+@media screen and (max-width: 700px) {
+    .about-page {
+        scale: 95%;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .tools-container {
+        display: none;
+    }
+
+    .about-tools {
+        margin-left: 20px;
+    }
+
+    .techstacks {
+        margin-left: 40px;
+    }
 }

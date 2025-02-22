@@ -47,8 +47,8 @@ const About = () => {
                     </div>
 
                     <div className="techstack">
-                        <img  style={{marginTop : '5px'}} src={tailWind} alt='tailwind-css' />
-                        <p style={{marginTop : '15px'}}>Tailwind CSS</p>
+                        <img style={{ marginTop: '5px' }} src={tailWind} alt='tailwind-css' />
+                        <p style={{ marginTop: '15px' }}>Tailwind CSS</p>
                     </div>
 
                     <div className="techstack">
@@ -74,11 +74,11 @@ const About = () => {
             <div className="about-tools">
 
                 <div className="about">
-                    <p  className='title'>//About</p>
-                    <p>I am a Full Stack Developer skilled in Java, Spring Boot, React.js, and modern web technologies, with a strong passion for AI & Data Science. I love building end-to-end applications, solving complex problems, and creating seamless digital experiences.</p>
+                    <p className='title'>//About</p>
+                    <p>I am a Full Stack Developer skilled in Java, Spring Boot, React.js, and modern web technologies, with a strong passion for AI & Data Science.</p>
                 </div>
                 <div className="tools-container">
-                    <p  className='title'>//Tools</p>
+                    <p className='title'>//Tools</p>
                     <div className='tools'>
 
                         <div className="tool">
@@ -92,16 +92,16 @@ const About = () => {
 
 
                         <div className="tool">
-                            <img style={{marginTop: '5px'}}  src={figma} alt='img' />
+                            <img style={{ marginTop: '5px' }} src={figma} alt='img' />
                         </div>
 
 
                         <div className="tool">
-                            <img style={{marginTop: '15px'}} src={aws} alt='img' />
+                            <img style={{ marginTop: '15px' }} src={aws} alt='img' />
                         </div>
 
                         <div className="tool">
-                            <img style={{marginTop: '3px'}}  src={ubuntu} alt='img' />
+                            <img style={{ marginTop: '3px' }} src={ubuntu} alt='img' />
                         </div>
 
                     </div>

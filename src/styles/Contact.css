@@ -112,3 +112,31 @@
     height: 24px;
     margin-right: 10px;
 }
+
+
+/* LG */
+@media screen and ((min-width: 1000px) and (max-width: 1200px)){
+.contact-page .contact{
+    gap: 80px;
+    margin-left: 5%;
+}
+}
+
+
+/* MD */
+@media screen and ((min-width: 700px) and (max-width: 1000px)){
+    .contact-page .contact{
+        gap: 100px;
+        margin-left: -5%;
+        scale: 80%;
+    }
+}
+
+/* SM */
+@media screen and (max-width: 700px){
+    .contact-page .contact{
+        gap: 100px;
+        margin-left: -14%;
+        scale: 67%;
+    }
+}
