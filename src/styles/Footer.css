@@ -2,7 +2,7 @@ footer{
     width: auto;
     height: 50px;
     background-color: #1e5d98;
-    padding: 20px;
+    padding: 5px;
     color: white;
     font-size: 14px;
     display: flex;
@@ -19,4 +19,11 @@ footer .icon-link img{
 footer .icon-link{
     display: flex;
     gap: 20px;
+}
+
+/* SM */
+@media screen and (max-width: 700px) {
+    footer div{
+        scale: 75%;
+    }
 }

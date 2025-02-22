@@ -86,7 +86,7 @@
 /* MD */
 @media screen and ((min-width: 700px) and (max-width: 1000px)) {
     .nav-container .nav-bar {
-        width: 60%;
+        width: 70%;
     }
 
     .nav-container .git-btn {
@@ -106,7 +106,8 @@
     }
 
     .nav-container .nav-bar {
-        width: 80%;
+        width: 88%;
+        /* left: 46%; */
     }
 
 }

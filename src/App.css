@@ -2,3 +2,6 @@
     transition-timing-function: 0.2s;
 }
 
+body{
+    width: 100%;
+}

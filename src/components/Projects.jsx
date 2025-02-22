@@ -17,6 +17,8 @@ const Projects = () => {
         </div>
 
         <div className="project">
+          <img src={eshop} alt='img' />
+
           <div className="content">
             <p className="title">
         //eShop – E-commerce Platform
@@ -36,12 +38,11 @@ const Projects = () => {
                 Repository</button></a>
             </div>
           </div>
-          <div>
-            <img src={eshop} alt='img' />
-          </div>
+
+
         </div>
 
-        <div className="project project2">
+        <div className="project">
           <img style={{ marginRight: '10px', marginLeft: '0' }} src={mews} alt='img' />
           <div className="content">
             <p className="title">
@@ -67,6 +68,8 @@ const Projects = () => {
 
 
         <div className="project">
+          <img src={postup} alt='img' />
+
           <div className="content">
             <p className="title">
         // PostUp – Message Posting Application
@@ -87,7 +90,6 @@ const Projects = () => {
                   Repository</button></a>
             </div>
           </div>
-          <img src={postup} alt='img' />
         </div>
 
 
