@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Home.css';
 import home from '../assets/home.png';
+import resume from '../assets/resume.pdf';
 
 const Home = () => {
   return (
@@ -10,8 +11,8 @@ const Home = () => {
         <h1>I'm Mohanapriyan</h1>
         <p>I'm Full Stack Developer <b>|</b></p>
         <div className='btns'>
-            <button className='btn-1'>Let's Talk</button>
-            <button className='btn-2'>Download CV</button>
+        <a style={{textDecoration: 'none',color: 'white'}} href='#contact'><button className='btn-1'>Let's Talk</button></a>
+        <a style={{textDecoration: 'none',color: 'white'}} href={resume} target='new'><button className='btn-2'>Download CV</button></a>
         </div>
         </div>
         <img className='home-img' src={home} alt='landing img'/>

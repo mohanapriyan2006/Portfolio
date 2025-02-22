@@ -5,6 +5,8 @@ import mews from '../assets/mews.png';
 import postup from '../assets/postup.png';
 import portfolio from '../assets/portfolio.png';
 import greenmart from '../assets/greenmart.png';
+import portfolioDesign from '../assets/portfolio-design.pdf';
+import greenmartDesign from '../assets/greenmart-design.pdf';
 
 const Projects = () => {
   return (
@@ -28,9 +30,10 @@ const Projects = () => {
               <li>Implemented seamless client-side interactivity for adding and managing cart items.</li>
             </ul>
             <div className='btns'>
-              <button className='btn-1'>Visit site</button>
-              <button className='btn-2'>
-                Repository</button>
+            <a href='https://e-shop-website-project.netlify.app/' target='new'>
+            <button className='btn-1'>Visit site</button></a>
+              <a href='https://github.com/mohanapriyan2006/EShop' target='new'><button className='btn-2'>
+                Repository</button></a>
             </div>
           </div>
           <div>
@@ -53,9 +56,11 @@ const Projects = () => {
               <li>Designed a mobile-friendly, responsive UI using Bootstrap for smooth accessibility across devices.</li>
             </ul>
             <div className='btns'>
-              <button className='btn-1'>Visit site</button>
-              <button className='btn-2'>
-                Repository</button>
+            <a href='https://mews-newsapp.netlify.app/' target='new'>
+              <button className='btn-1'>Visit site</button></a>
+              <a href='https://github.com/mohanapriyan2006/mews-api' target='new'>
+                <button className='btn-2'>
+                  Repository</button></a>
             </div>
           </div>
         </div>
@@ -75,9 +80,11 @@ const Projects = () => {
               <li>Designed a clean, responsive interface for better content management and usability.</li>
             </ul>
             <div className='btns'>
-              <button className='btn-1'>Visit site</button>
+              <a href='https://postup-reactapp.netlify.app/' target='new'>
+                <button className='btn-1'>Visit site</button></a>
+              <a href='https://github.com/mohanapriyan2006/postup-api' target='new'>
               <button className='btn-2'>
-                Repository</button>
+                Repository</button></a>
             </div>
           </div>
           <img src={postup} alt='img' />
@@ -91,8 +98,8 @@ const Projects = () => {
       <div className="title-div">
       </div>
       <div className="designs">
-        <img style={{ height: '250px', width: '500px' }} src={portfolio} alt='img' />
-        <img style={{ height: '250px', width: '500px' }} src={greenmart} alt='img' />
+        <a href={portfolioDesign} target='new'><img style={{ height: '250px', width: '500px' }} src={portfolio} alt='img' /></a>
+        <a href={greenmartDesign} target='new'><img style={{ height: '250px', width: '500px' }} src={greenmart} alt='img' /></a>
       </div>
     </div>
   )

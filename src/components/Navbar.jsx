@@ -7,16 +7,18 @@ import '../styles/Navbar.css';
 const Navbar = () => {
   return (
     <nav className='nav-container'>
-      <img src={logo} alt='logo' className='logo' />
+      <a href='#home'>
+      <img src={logo} alt='logo' className='logo' /></a>
       <div className='nav-bar'>
         <ul>
-        <li><a style={{textDecoration: 'none',color: 'black'}} href='#home'>Home</a></li>
-        <li><a style={{textDecoration: 'none',color: 'black'}} href='#about'>About</a></li>
-        <li><a style={{textDecoration: 'none',color: 'black'}} href='#projects'>Projects</a></li>
-        <li><a style={{textDecoration: 'none',color: 'black'}} href='#contact'>Contact</a></li>
+        <a style={{textDecoration: 'none',color: 'black'}} href='#home'><li>Home</li></a>
+        <a style={{textDecoration: 'none',color: 'black'}} href='#about'><li>About</li></a>
+        <a style={{textDecoration: 'none',color: 'black'}} href='#projects'><li>Projects</li></a>
+        <a style={{textDecoration: 'none',color: 'black'}} href='#contact'><li>Contact</li></a>
 
         </ul>
       </div>
+      <a href='https://github.com/mohanapriyan2006' target='new'>
       <button className='git-btn'>
         <img src={github} alt='icon' className='git-icon' />
         <span>
@@ -24,6 +26,7 @@ const Navbar = () => {
         </span>
         <img src={arrow} alt='arrow' className='git-arrow'/>
       </button>
+      </a>
     </nav>
   )
 }
