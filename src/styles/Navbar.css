@@ -113,8 +113,8 @@
     }
 
     .nav-container .nav-bar {
-        width: 88%;
-        /* left: 46%; */
+        scale: 70%;
+        left: 20%;
     }
 
 }

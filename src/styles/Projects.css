@@ -228,12 +228,17 @@ h4 {
         flex-direction: column;
     }
 
+    
     .project img {
         scale: 75%;
         position: relative;
         left: -35%;
         margin-bottom: -14%;
+        margin-right: 0;
     }
-
+    
+    .projects img:hover{
+        scale: 0;
+    }
 
 }

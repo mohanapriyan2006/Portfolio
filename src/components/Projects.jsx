@@ -39,8 +39,7 @@ const Projects = () => {
                 Repository</button></a>
             </div>
           </div>
-
-
+                    
         </div>
 
         <div className="project">
