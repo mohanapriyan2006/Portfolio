@@ -97,7 +97,9 @@
     }
 
     .nav-container .git-btn {
-        scale: 90%;
+        scale: 80%;
+        position: relative;
+        left: 10%;
     }
 }
 
