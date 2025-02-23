@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home">
       <div className='home-content'>
         <h2>Hello,</h2>
-        <h1>I'm Mohanapriyan M</h1>
+        <h1>I'm Mohanapriyan</h1>
         <p>I'm Full Stack Developer <b>|</b></p>
         <div className='btns'>
           <a style={{ textDecoration: 'none', color: 'white' }} href='#contact'><button className='btn-1'>Let's Talk</button></a>
