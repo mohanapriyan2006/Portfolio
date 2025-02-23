@@ -77,6 +77,10 @@ h4 {
 
 }
 
+.projects .project .content{
+    padding-top: 1.5rem;
+}
+
 .projects .project .content .sub-title {
     font-weight: 500;
 }
@@ -101,6 +105,10 @@ h4 {
     scale: 103%;
     transition: 0.3s;
     opacity: 100%;
+    -webkit-box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.15);
+    -moz-box-shadow: -3px 1px 39px 1px rgba(2, 192, 255, 0.25);
+    box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.35);
+
 }
 
 /* LG */

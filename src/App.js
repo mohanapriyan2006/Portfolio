@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
 
+      
       <section id='home'>
       <Navbar />
         <Home />
@@ -26,6 +27,7 @@ function App() {
       <section id='contact'>
         <Contact />
       </section>
+
 
       <Footer />
     </div>

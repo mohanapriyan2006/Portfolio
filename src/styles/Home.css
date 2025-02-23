@@ -58,6 +58,10 @@
 .btns .btn-1:hover{
     background-color: #0084ff;
     scale: 105%;
+    -webkit-box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.15);
+    -moz-box-shadow: -3px 1px 39px 1px rgba(2, 192, 255, 0.25);
+    box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.35);
+
 }
 
 .btns .btn-2{
@@ -74,6 +78,7 @@
     background-color: #52abff;
     scale: 105%;
     color: white;
+    
 }
 
 .home .home-img{

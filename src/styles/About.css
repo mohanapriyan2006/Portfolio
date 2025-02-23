@@ -33,12 +33,14 @@
 
 .techstacks {
     width: 90%;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
     padding: 15px;
     margin-left: 20px;
+    margin-right: 50px;
 }
 
 .techstack-container .title {

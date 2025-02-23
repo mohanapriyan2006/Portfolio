@@ -67,7 +67,13 @@
 }
 
 .nav-container .git-btn:hover {
-    border: solid rgba(170, 254, 44, 0.877) 1.5px;
+    border: solid rgb(163, 253, 28) 2px;
+    scale: 105%;
+     -webkit-box-shadow: -3px 1px 89px 1px rgba(119, 255, 0, 0.95);
+    -moz-box-shadow: -3px 1px 89px 1px rgba(74, 255, 2, 0.95);
+    box-shadow: -3px 1px 89px 1px rgba(77, 255, 0, 0.45);
+
+
 }
 
 .nav-container .git-btn span {
