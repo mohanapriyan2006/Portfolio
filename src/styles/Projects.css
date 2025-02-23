@@ -61,7 +61,13 @@ h4 {
     width: 630px;
     height: 400px;
     filter: drop-shadow(5px 5px 10px #00000058);
-
+    cursor: pointer;
+    
+}
+.projects .project img:hover{
+    filter: drop-shadow(10px 10px 10px #008cff58);
+    scale: 103%;
+    transition: 0.2s;
 }
 
 .projects .project {
@@ -98,7 +104,6 @@ h4 {
     -moz-box-shadow: -3px 1px 89px 1px rgba(0, 0, 0, 0.55);
     box-shadow: -3px 1px 19px 1px rgba(0, 0, 0, 0.25);
     opacity: 90%;
-
 }
 
 .designs img:hover {

@@ -25,6 +25,16 @@
     -webkit-box-shadow: -3px 1px 29px 1px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: -3px 1px 20px 1px rgba(0, 0, 0, 0.55);
     box-shadow: -3px 1px 15px 0px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+.techstack:hover{
+    transition: 0.2s;
+    scale: 105%;
+    -webkit-box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.15);
+    -moz-box-shadow: -3px 1px 39px 1px rgba(2, 192, 255, 0.25);
+    box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.35);
+
 }
 
 .techstack p {
@@ -68,8 +78,18 @@
     -webkit-box-shadow: -3px 1px 29px 1px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: -3px 1px 20px 1px rgba(0, 0, 0, 0.55);
     box-shadow: -3px 1px 15px 0px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
 }
 
+
+.tools-container .tools .tool:hover{
+    scale: 105%;
+    transition: 0.2s;
+    -webkit-box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.15);
+    -moz-box-shadow: -3px 1px 39px 1px rgba(2, 192, 255, 0.25);
+    box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.35);
+
+}
 .about-tools {
     margin-top: 80px;
     margin-left: -60px;

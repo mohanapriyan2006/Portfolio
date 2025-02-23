@@ -19,7 +19,7 @@ const About = () => {
     return (
         <div className='about-page'>
             <div className="techstack-container">
-                <p className='title'>//TechStack</p>
+                <p className='title'>TechStack</p>
                 <div className='techstacks'>
                     <div className="techstack">
                         <img src={reactjs} alt='react' />
@@ -74,11 +74,11 @@ const About = () => {
             <div className="about-tools">
 
                 <div className="about">
-                    <p className='title'>//About</p>
+                    <p className='title'>About</p>
                     <p>I am a Full Stack Developer skilled in Java, Spring Boot, React.js, and modern web technologies, with a strong passion for AI & Data Science.</p>
                 </div>
                 <div className="tools-container">
-                    <p className='title'>//Tools</p>
+                    <p className='title'>Tools</p>
                     <div className='tools'>
 
                         <div className="tool">

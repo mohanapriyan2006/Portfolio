@@ -17,11 +17,12 @@ const Projects = () => {
         </div>
 
         <div className="project">
-          <img src={eshop} alt='img' />
+        <a href='https://e-shop-website-project.netlify.app/' target='new'>
+          <img src={eshop} alt='img' /></a>
 
           <div className="content">
             <p className="title">
-        //eShop – E-commerce Platform
+        eShop – E-commerce Platform
             </p>
             <p className='sub-title'>
               Tech Stack: HTML, CSS, JavaScript
@@ -43,10 +44,11 @@ const Projects = () => {
         </div>
 
         <div className="project">
-          <img style={{ marginRight: '10px', marginLeft: '0' }} src={mews} alt='img' />
+        <a href='https://mews-newsapp.netlify.app/' target='new'>
+          <img style={{ marginRight: '10px', marginLeft: '0' }} src={mews} alt='img' /></a>
           <div className="content">
             <p className="title">
-        // Mews – Real-Time News Website
+        Mews – Real-Time News Website
             </p>
             <p className='sub-title'>
               Tech Stack: React.js, Bootstrap, API Integration
@@ -68,11 +70,12 @@ const Projects = () => {
 
 
         <div className="project">
+        <a href='https://postup-reactapp.netlify.app/' target='new'>
           <img src={postup} alt='img' />
-
+          </a>
           <div className="content">
             <p className="title">
-        // PostUp – Message Posting Application
+        PostUp – Message Posting Application
             </p>
             <p className='sub-title'>
               Tech Stack: React.js, CSS, React Router
