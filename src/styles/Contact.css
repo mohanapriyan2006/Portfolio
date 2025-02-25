@@ -40,6 +40,9 @@
     border-radius: 5px;
 }
 
+/* .contact-page .contact .contact-form form .input-box input:hover{
+    border: solid #45a4fd 1.7px;
+} */
 
 
 .contact-page .contact .contact-form textarea {
@@ -48,6 +51,10 @@
     border-radius: 5px;
     resize: none;
 }
+/* .contact-page .contact .contact-form textarea:focus{
+    border: solid #45a4fd 1.7px;
+
+} */
 
 .contact-page .contact .contact-form button {
     border: none;

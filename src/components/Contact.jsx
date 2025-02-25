@@ -1,34 +1,64 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 import mail1 from "../assets/mail1.png";
 import location from "../assets/location.png";
 import phone from "../assets/phone.png";
 
+
 const Contact = () => {
+
+    const form = useRef();
+
+    const PUBLIC_KEY="hywMjnV9ivDj80oBm";
+    const SERVICE_ID="service_tyl72hv";
+    const TEMPLATE_ID ="template_lza28vb";
+
+    console.log("SERVICE_ID:",SERVICE_ID);
+    console.log("TEMPLATE_ID:", TEMPLATE_ID);
+    console.log("PUBLIC_KEY:", PUBLIC_KEY);
+
+
+    const sendMail = (e) => {
+        e.preventDefault();
+        
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+            () => {
+                alert('Successfully email send.')
+            }
+        ).catch((error) => {
+            alert('Failed...', error);
+        }
+        );
+
+    }
+
     return (
         <div className="contact-page">
             <h4>Get In Touch</h4>
             <div className="title-div"></div>
             <div className="contact">
                 <div className="contact-form">
-                    <form>
+                    <form ref={form} onSubmit={sendMail}>
                         <div className='input-div'>
 
                             <div className="input-box">
-                                <label htmlFor="email">Email</label>
-                                <input type="email" name="email" id="email" />
+                                <label htmlFor="name">Name</label>
+                                <input type="text" name="contact_name" id="name" />
                             </div>
-
 
                             <div className="input-box">
-                                <label htmlFor="subject">Subject</label>
-                                <input type="text" name="subject" id="subject" />
+                                <label htmlFor="email">Email</label>
+                                <input type="email" name="contact_email" id="email" />
                             </div>
+
+
 
                         </div>
                         <div className="input-box">
                             <label htmlFor="message">Message</label>
-                            <textarea name="message" id="message"></textarea>
+                            <textarea name="contact_message" id="message"></textarea>
                         </div>
 
                         <button type="submit">Send</button>
