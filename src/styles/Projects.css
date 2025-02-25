@@ -212,7 +212,7 @@ h4 {
         scale: 55%;
         gap: 50px;
         margin-top: -35%;
-        margin-left: -10%;
+        margin-left: -13.5%;
         flex-direction: column;
     }
 
@@ -230,15 +230,14 @@ h4 {
 
     
     .project img {
-        scale: 75%;
+        scale: 60%;
         position: relative;
-        left: -35%;
+        left: -40%;
         margin-bottom: -14%;
         margin-right: 0;
     }
     
-    .projects img:hover{
-        scale: 0;
+    .projects .project img:hover{
+        scale: 64%;
     }
-
 }
