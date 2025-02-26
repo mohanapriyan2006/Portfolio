@@ -25,7 +25,7 @@ footer .icon-link{
 /* MD */
 @media screen and ((min-width: 700px) and (max-width: 1000px)) {
     footer{
-        width: 110%;
+        width: auto;
     }
 }
 
@@ -33,5 +33,8 @@ footer .icon-link{
 @media screen and (max-width: 700px) {
     footer div{
         scale: 75%;
+    }
+    footer{
+        width: 102%;
     }
 }

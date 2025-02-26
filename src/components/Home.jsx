@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
-import home from '../assets/home.png';
+import home from '../assets/home.gif';
 import resume from '../assets/resume.pdf';
 
 const Home = () => {
