@@ -1,6 +1,6 @@
 .project-page {
     margin-bottom: 60px;
-    padding-top: 7%;
+    padding-top: 60px;
 }
 
 .projects {
@@ -24,7 +24,7 @@ h4 {
 .title-div {
     border-bottom: solid #369EFF 4px;
     height: 110px;
-    width: 10%;
+    width: 90px;
     margin-left: 46%;
     margin-bottom: 40px;
     margin-top: -110px;
@@ -33,7 +33,7 @@ h4 {
 .projects .title-div {
     border-bottom: solid #369EFF 4px;
     height: 110px;
-    width: 10%;
+    width: 90px;
     margin-top: -150px;
     margin-left: 46%;
 }
@@ -51,15 +51,12 @@ h4 {
 
 .projects .project {
     width: 90%;
-    /* margin: 0 5%; */
     display: flex;
     gap: 40px;
     padding: 0 10px;
 }
 
 .projects .project img {
-    width: 630px;
-    height: 400px;
     filter: drop-shadow(5px 5px 10px #00000058);
     cursor: pointer;
     
@@ -92,11 +89,11 @@ h4 {
 }
 
 .designs {
-    width: 100%;
+    width: auto;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: space-around;
-    margin: 50px 0;
+    margin: 50px 20px;
 }
 
 .designs img {
@@ -106,6 +103,7 @@ h4 {
     opacity: 90%;
     border: solid #2794fa77 2px;
     border-radius: 5px;
+    height: auto;
     
 }
 
@@ -119,128 +117,39 @@ h4 {
 
 }
 
-/* LG */
-@media screen and ((min-width: 1000px) and (max-width: 1200px)) {
-    .projects {
-        scale: 95%;
-    }
-
-    .designs {
-        scale: 95%;
-        gap: 20px;
-    }
-
-}
 
 /* MD */
 @media screen and ((min-width: 700px) and (max-width: 1000px)) {
-    .projects {
-        scale: 70%;
-        margin: 0;
+    .project .content{
+        scale: 90%;
+        margin-top: -50px;
     }
 
-    .designs {
-        scale: 70%;
-        gap: 20px;
-    }
-
-    .projects {
-        margin-bottom: -180px;
-    }
-
-    .projects .project {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px;
-        position: relative;
-        left: -12%;
-    }
-
-    .projects .project2 {
-        position: relative;
-        left: -18%;
-    }
-
-    .designs {
-        position: relative;
-        left: -12%;
-    }
-
-    .title-div {
-        margin-left: 44%;
-    }
-
-    .projects .title-div {
-        margin-left: 44%;
-    }
-
-    .project-page {
-        margin-top: -30%;
-    }
-
-    .design-title {
-        scale: 70%;
-    }
+.projects .title-div {
+    width: 70px;
+}
 
 }
 
 /* SM */
 @media screen and (max-width: 700px) {
-    .projects {
-        scale: 70%;
-        margin-left: -7%;
-        margin-bottom: -105%;
-        margin-top: -60%;
-    }
-
-    .projects h4 {
-        margin-left: 20%;
-    }
-
-    .title-div {
-        width: 20%;
-        margin-left: 40%;
-        margin-bottom: 8%;
-        margin-top: -33%;
-
-    }
-
-    .projects .title-div {
-        width: 20%;
-        margin-left: 50%;
-        
-    }
-
-    .designs {
-        scale: 55%;
-        gap: 50px;
-        margin-top: -35%;
-        margin-left: -13.5%;
-        flex-direction: column;
-    }
-
-    .project-page {
-        margin-top: -50%;
-    }
-
-    .design-title {
-        scale: 60%;
-    }
-
     .project {
         flex-direction: column;
     }
 
-    
-    .project img {
-        scale: 60%;
-        position: relative;
-        left: -40%;
-        margin-bottom: -14%;
-        margin-right: 0;
+    .project .content{
+        scale: 90%;
+        margin-top: -50px;
+    }
+
+    .designs {
+        flex-direction: column;
+    }
+    .projects .title-div {
+        width: 70px;
+    }
+     .title-div {
+        width: 70px;
     }
     
-    .projects .project img:hover{
-        scale: 64%;
-    }
 }

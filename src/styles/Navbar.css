@@ -1,5 +1,5 @@
 .nav-container {
-    margin-top: 5px;
+    margin-top: 2px;
     padding: 0 5px;
     width: 99%;
     height: 2rem;
@@ -16,6 +16,11 @@
     cursor: pointer;
     position: relative;
     top: -50%;
+}
+
+.nav-container .logo:hover{
+    filter: drop-shadow(5px 5px 5px #1d8eff8d);
+  
 }
 
 .nav-container .nav-bar {
@@ -50,7 +55,7 @@
 }
 
 .nav-container .nav-bar ul li {
-    margin-top: 4px;
+    margin: 4px 0;
     text-align: center;
     padding: 5px 10px;
     font-weight: bold;
@@ -58,12 +63,17 @@
     cursor: pointer;
 }
 
+.nav-container .nav-bar ul .active-link{
+    color: rgb(2, 108, 255);
+}
+
 .nav-container .nav-bar ul li:hover {
-    height: 22px;
-    border: dotted rgb(155, 155, 155) 1.5px;
-    background-color: #EAEAEA;
+    height: fit-content;
+    border: dotted rgba(54, 171, 255, 0.349) 1.5px;
+    background-color: #499df71c;
     border-radius: 25px;
 }
+
 
 .nav-container .git-btn {
     background-color: black;
@@ -127,7 +137,7 @@
     .nav-container .nav-bar {
         scale: 80%;
         width: 400px;
-        left: 25%;
+        left: 38%;
     }
 
 }

@@ -158,14 +158,13 @@
 @media screen and (max-width: 700px) {
     .contact-page .contact {
         gap: 50px;
-        margin-left: -7%;
-        scale: 70%;
-        margin-top: -20%;
+        scale: 95%;
+        margin-top: -10%;
     }
 
     .contact-page .contact .contact-form {
         scale: 80%;
-        margin-left: -10%;
+        margin-left: -3%;
     }
 
     .contact-page .contact .contact-div {
@@ -173,7 +172,8 @@
     }
 
     .contact-page .contact .contact-details {
-        margin-left: 13%;
+        margin-left: 4;
+        scale: 80%;
     }
 
 }

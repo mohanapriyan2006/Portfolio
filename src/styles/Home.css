@@ -134,6 +134,14 @@
         margin-top: 90px;
         left: 3%;
     }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 80%;
+        }
+    }
     
 }
 
@@ -152,6 +160,14 @@
         width: 600px;
         margin-top: 90px;
         left: 0%;
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 80%;
+        }
     }
 }
 

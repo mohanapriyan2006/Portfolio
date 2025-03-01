@@ -14,10 +14,6 @@ const Contact = () => {
     const SERVICE_ID="service_tyl72hv";
     const TEMPLATE_ID ="template_lza28vb";
 
-    console.log("SERVICE_ID:",SERVICE_ID);
-    console.log("TEMPLATE_ID:", TEMPLATE_ID);
-    console.log("PUBLIC_KEY:", PUBLIC_KEY);
-
 
     const sendMail = (e) => {
         e.preventDefault();
@@ -45,12 +41,12 @@ const Contact = () => {
 
                             <div className="input-box">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" name="contact_name" id="name" />
+                                <input type="text" name="contact_name" id="name" required/>
                             </div>
 
                             <div className="input-box">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" name="contact_email" id="email" />
+                                <input type="email" name="contact_email" id="email" required/>
                             </div>
 
 
@@ -58,7 +54,7 @@ const Contact = () => {
                         </div>
                         <div className="input-box">
                             <label htmlFor="message">Message</label>
-                            <textarea name="contact_message" id="message"></textarea>
+                            <textarea name="contact_message" id="message" required></textarea>
                         </div>
 
                         <button type="submit">Send</button>
