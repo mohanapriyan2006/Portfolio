@@ -12,10 +12,10 @@
 .nav-container .logo {
     height: 70px;
     width: 120px;
-    margin-left: 10px;
+    margin-left: 5px;
     cursor: pointer;
     position: relative;
-    top: -50%;
+    top: -100%;
 }
 
 .nav-container .logo:hover{
@@ -113,13 +113,18 @@
 /* MD */
 @media screen and ((min-width: 700px) and (max-width: 1000px)) {
     .nav-container .nav-bar {
-        width: 70%;
+        width: 60%;
     }
 
     .nav-container .git-btn {
         scale: 80%;
         position: relative;
-        left: 10%;
+        left: 20%;
+    }
+
+    .nav-container .git-btn:hover {
+        scale: 83%;
+    
     }
 }
 
@@ -129,6 +134,8 @@
     .nav-container .git-btn {
         display: none;
     }
+
+
 
     .nav-container .logo {
         display: none;

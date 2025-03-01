@@ -44,7 +44,6 @@ h4 {
     font-weight: 700;
     font-style: normal;
     margin-left: -15px;
-    margin-bottom: 10px;
     font-size: 24px;
     text-align: start;
 }
@@ -140,8 +139,12 @@ h4 {
     .project .content{
         scale: 90%;
         margin-top: -50px;
+        margin-left: 20px;
     }
 
+    .designs img{
+        height: 50%;
+    }
     .designs {
         flex-direction: column;
     }

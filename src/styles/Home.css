@@ -157,9 +157,9 @@
 
     .home .home-img{
         height: 400px;
-        width: 600px;
+        width: 400px;
         margin-top: 90px;
-        left: 0%;
+        left: -4%;
     }
     @keyframes typing {
         from {

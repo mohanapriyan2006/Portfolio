@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
       <div>
         <a href='#home'>
-          <img style={{ height: '50px', width: '100px' }} src={logo} alt='logo' /></a>
+          <img className='footer-logo' style={{ height: '50px', width: '100px' }} src={logo} alt='logo' /></a>
       </div>
       <div>
 
