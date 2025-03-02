@@ -10,9 +10,9 @@ const Contact = () => {
 
     const form = useRef();
 
-    const PUBLIC_KEY="hywMjnV9ivDj80oBm";
-    const SERVICE_ID="service_tyl72hv";
-    const TEMPLATE_ID ="template_lza28vb";
+    const PUBLIC_KEY=import.meta.env.VITE_PUBLIC_KEY;
+    const SERVICE_ID=import.meta.env.VITE_SERVICE_ID;
+    const TEMPLATE_ID =import.meta.env.VITE_TEMPLATE_ID;
 
 
     const sendMail = (e) => {
@@ -21,10 +21,10 @@ const Contact = () => {
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
             () => {
-                alert('Successfully email send.')
+                alert('Successfully email send.✅')
             }
         ).catch((error) => {
-            alert('Failed...', error);
+            alert('Failed...❗', error);
         }
         );
 
