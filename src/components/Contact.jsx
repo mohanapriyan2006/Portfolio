@@ -1,32 +1,50 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 import mail1 from "../assets/mail1.png";
 import location from "../assets/location.png";
 import phone from "../assets/phone.png";
-
+import Swal from "sweetalert2";
 
 const Contact = () => {
 
     const form = useRef();
+    const [isDisabled, setDisabled] = useState(false);
 
-    const PUBLIC_KEY=import.meta.env.VITE_PUBLIC_KEY;
-    const SERVICE_ID=import.meta.env.VITE_SERVICE_ID;
-    const TEMPLATE_ID =import.meta.env.VITE_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+    const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+
+
+
+
+    const showAlert = () => {
+        Swal.fire({
+            title: "Success!",
+            text: "Your action was successful!",
+            icon: "success",
+            confirmButtonText: "OK",
+        });
+    };
+
+
 
 
     const sendMail = (e) => {
         e.preventDefault();
-        
+        setDisabled(true)
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
             () => {
-                alert('Successfully email send.✅')
+                showAlert();
+                setDisabled(false);
             }
         ).catch((error) => {
             alert('Failed...❗', error);
+            setDisabled(false);
         }
-        );
+        )
+
 
     }
 
@@ -41,12 +59,12 @@ const Contact = () => {
 
                             <div className="input-box">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" name="contact_name" id="name" required/>
+                                <input type="text" name="contact_name" id="name" required />
                             </div>
 
                             <div className="input-box">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" name="contact_email" id="email" required/>
+                                <input type="email" name="contact_email" id="email" required />
                             </div>
 
 
@@ -57,7 +75,7 @@ const Contact = () => {
                             <textarea name="contact_message" id="message" required></textarea>
                         </div>
 
-                        <button type="submit">Send</button>
+                        <button type="submit" disabled={isDisabled}>Send</button>
                     </form>
                 </div>
                 <div className="contact-div"></div>
