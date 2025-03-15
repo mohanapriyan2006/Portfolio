@@ -58,9 +58,10 @@ h4 {
 .projects .project img {
     filter: drop-shadow(5px 5px 10px #00000058);
     cursor: pointer;
-    
+
 }
-.projects .project img:hover{
+
+.projects .project img:hover {
     filter: drop-shadow(10px 10px 10px #008cff58);
     scale: 103%;
     transition: 0.2s;
@@ -79,7 +80,7 @@ h4 {
 
 }
 
-.projects .project .content{
+.projects .project .content {
     padding-top: 1.5rem;
 }
 
@@ -87,46 +88,68 @@ h4 {
     font-weight: 500;
 }
 
-.designs {
+/* .designs {
     width: auto;
     display: flex;
     gap: 20px;
     justify-content: space-around;
     margin: 50px 20px;
+} */
+
+
+
+.design-swiper {
+    filter: drop-shadow(5px 5px 10px #00000038);
+
 }
 
-.designs img {
-    -webkit-box-shadow: -3px 1px 89px 1px rgba(0, 0, 0, 0.55);
-    -moz-box-shadow: -3px 1px 89px 1px rgba(0, 0, 0, 0.55);
-    box-shadow: -3px 1px 19px 1px rgba(0, 0, 0, 0.25);
-    opacity: 90%;
-    border: solid #2794fa77 2px;
+.design-img {
     border-radius: 5px;
-    height: auto;
-    
+    height: 100%;
+
 }
 
-.designs img:hover {
-    scale: 103%;
+.design-swiper:hover {
+    scale: 102%;
     transition: 0.3s;
-    opacity: 100%;
-    -webkit-box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.15);
-    -moz-box-shadow: -3px 1px 39px 1px rgba(2, 192, 255, 0.25);
-    box-shadow: -3px 1px 39px 1px rgba(0, 157, 255, 0.35);
+    filter: drop-shadow(5px 5px 10px #0095ff38);
+
+}
+
+.swiper-icons {
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: 48%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    color: #0c70ce;
+    scale: 200%;
+}
+
+.swiper-icons div {
+    cursor: pointer;
+}
+
+.swiper-icons div :hover {
+    scale: 102%;
+    color: #0d7ee8;
 
 }
 
 
 /* MD */
 @media screen and ((min-width: 700px) and (max-width: 1000px)) {
-    .project .content{
+    .project .content {
         scale: 90%;
         margin-top: -50px;
     }
 
-.projects .title-div {
-    width: 70px;
-}
+    .projects .title-div {
+        width: 70px;
+    }
+
 
 }
 
@@ -136,23 +159,32 @@ h4 {
         flex-direction: column;
     }
 
-    .project .content{
+    .project .content {
         scale: 90%;
         margin-top: -50px;
         margin-left: 20px;
     }
 
-    .designs img{
+    .designs img {
         height: 50%;
     }
+
     .designs {
         flex-direction: column;
     }
+
     .projects .title-div {
         width: 70px;
     }
-     .title-div {
+
+    .title-div {
         width: 70px;
     }
-    
+
+    .swiper-icons {
+        margin-left: 43%;
+
+    }
+
+
 }
