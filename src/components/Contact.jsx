@@ -75,7 +75,7 @@ const Contact = () => {
                             <textarea name="contact_message" id="message" required></textarea>
                         </div>
 
-                        <button type="submit" disabled={isDisabled}>Send</button>
+                        <button type="submit" className={isDisabled? "disabled-btn": ""} disabled={isDisabled}>{isDisabled? "Sending...":"Send"}</button>
                     </form>
                 </div>
                 <div className="contact-div"></div>

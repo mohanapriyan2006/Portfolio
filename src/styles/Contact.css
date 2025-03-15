@@ -67,6 +67,11 @@
     cursor: pointer;
 }
 
+.contact-page .contact .contact-form .disabled-btn{
+    background-color: #002e58;
+    cursor: wait;
+}
+
 .contact-page .contact .contact-form button:hover {
     background-color: #2093ff;
     scale: 100.5%;
