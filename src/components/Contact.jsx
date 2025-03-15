@@ -21,7 +21,7 @@ const Contact = () => {
     const showAlert = () => {
         Swal.fire({
             title: "Success!",
-            text: "Your action was successful!",
+            text: "Your Message was successfully send!",
             icon: "success",
             confirmButtonText: "OK",
         });
