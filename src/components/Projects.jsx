@@ -17,9 +17,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleLeft, faCircleRight } from '@fortawesome/free-solid-svg-icons';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 
-const Projects = () => {
+const Projects = ({ loading }) => {
 
   const [swiperInstance, setSwiperInstance] = useState(null);
 
@@ -85,23 +87,32 @@ const Projects = () => {
 
         {projectData.map((project, index) => (
           <div className="project" key={index}>
-            <a href={project.site} target="_blank" rel="noopener noreferrer">
-              <img src={project.img} alt={`${project.title} Preview`} />
-            </a>
+            {loading ?
+              <Skeleton height={300} width={400} borderRadius={10}/> : <a href={project.site} target="_blank" rel="noopener noreferrer">
+                <img src={project.img} alt={`${project.title} Preview`} />
+              </a>}
             <div className="content">
               <p className="title">{project.title}</p>
-              <p className="sub-title">Tech Stack: {project.techStack}</p>
+              <p className="sub-title">Tech Stack: {loading ?
+                <Skeleton height={25} width={200} borderRadius={5} />
+                : project.techStack}</p>
               <ul>
                 {project.description.map((point, i) => (
-                  <li key={i}>{point}</li>
+                  <li key={i}>{loading ?
+                    <>
+                      <Skeleton height={20} width={400} borderRadius={5} />
+                      <Skeleton height={20} width={300} borderRadius={5} />
+                    </> : point}</li>
                 ))}
               </ul>
               <div className="btns">
                 <a href={project.site} target="_blank" rel="noopener noreferrer">
-                  <button className="btn-1">Visit site</button>
+                  {loading ?
+                    <Skeleton height={40} width={100} borderRadius={10} /> : <button className="btn-1">Visit site</button>}
                 </a>
                 <a href={project.repo} target="_blank" rel="noopener noreferrer">
-                  <button className="btn-2">Repository</button>
+                  {loading ?
+                    <Skeleton height={40} width={100} borderRadius={10} /> : <button className="btn-2">Repository</button>}
                 </a>
               </div>
             </div>
@@ -133,26 +144,27 @@ const Projects = () => {
           }}
           modules={[Pagination, Autoplay, Navigation]}
           onSwiper={(swiper) => setSwiperInstance(swiper)}
-          style={{ maxWidth: '600px', width: '100%', margin: 'auto', marginTop: '20px' ,height: 'auto'}}
+          style={{ maxWidth: '600px', width: '100%', margin: 'auto', marginTop: '20px', height: 'auto' }}
         >
           {designData.map((item, index) => (
             <SwiperSlide key={index} >
-              <a href={item.pdf} target="_blank" rel="noopener noreferrer" >
-                <img
-                  className='design-img'
-                  src={item.img}
-                  alt="Design Preview"
-                />
-              </a>
+              {loading ?
+                <Skeleton height={300} maxWidth={600} borderRadius={10}/> : <a href={item.pdf} target="_blank" rel="noopener noreferrer" >
+                  <img
+                    className='design-img'
+                    src={item.img}
+                    alt="Design Preview"
+                  />
+                </a>}
             </SwiperSlide>
           ))}
 
         </Swiper>
 
         <div className="swiper-icons">
-            <div  className='prev-btn'><FontAwesomeIcon icon={faCircleLeft}/></div>
-            <div className='next-btn'><FontAwesomeIcon icon={faCircleRight}/></div>
-          </div>
+          <div className='prev-btn'><FontAwesomeIcon icon={faCircleLeft} /></div>
+          <div className='next-btn'><FontAwesomeIcon icon={faCircleRight} /></div>
+        </div>
       </div>
     </div>
   );
