@@ -1,15 +1,19 @@
 *{
     transition-timing-function: 0.2s ease-in-out;
+    
 }
 
 body{
     width: 100%;
     overflow-x: hidden;
+    
+    
 }
 
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
+    
 }
 
 img, video, iframe {
@@ -17,3 +21,9 @@ img, video, iframe {
     height: auto !important;
 }
 
+
+.confetti{
+    width: 100%;
+    position: absolute;
+    z-index: 99991;
+}

@@ -1,0 +1,77 @@
+.back {
+    height: 150%;
+    width: 130%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+}
+
+.welcome-div {
+    background-color: white;
+    margin: auto;
+    margin-top: 60dvh;
+    padding: 20px;
+    display: flex;
+    height: max-content;
+    width: 700px;
+    border-radius: 20px;
+    animation: floating 3s ease-in-out infinite;
+    box-shadow: rgba(0, 117, 250, 0.667) 0px 3px 6px, rgba(1, 117, 248, 0.452) 0px 3px 6px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.welcome-div img {
+    height: auto;
+    width: 150px;
+    margin: auto;
+}
+
+.welcome-div .content {
+    padding: 10px;
+    width: 80%;
+}
+
+.welcome-div .content p {
+    color: rgb(92, 92, 92);
+    width: 85%;
+    margin: auto;
+    padding-top: 5px;
+}
+
+/* SM */
+@media screen and (max-width: 600px) {
+    .welcome-div {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        margin-top: 300px;
+    }
+
+    .welcome-div .content {
+        margin: auto;
+        padding: 10px;
+        width: 100%;
+    }
+}
