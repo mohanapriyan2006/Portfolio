@@ -7,42 +7,51 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import { SkeletonTheme } from 'react-loading-skeleton';
+import Service from './components/Service';
 
 function App() {
 
   const [loading, setLoading] = useState(true);
-  
 
-    useEffect(() => {
-      const timer = setTimeout(() => setLoading(false), 2000); // fake delay
-      return () => clearTimeout(timer);
-    }, []);
-  
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000); // fake delay
+    return () => clearTimeout(timer);
+  }, []);
+
 
   return (
     <div className="App">
       <SkeletonTheme baseColor="#e0eafa" highlightColor="#87b8f5">
 
-      
-      <section id='home'>
-      <Navbar />
-        <Home loading={loading} />
-      </section>
 
-      <section id='about'>
-        <About loading={loading} />
-      </section>
+        <section id='home'>
+          <Navbar />
+          <Home loading={loading} />
+        </section>
 
-      <section id='projects'>
-        <Projects loading={loading} />
-      </section>
+        <section id='about'>
+          <About loading={loading} />
+        </section>
 
-      <section id='contact'>
-        <Contact loading={loading} />
-      </section>
+        <section id='service'>
+          <Service  loading={loading}/>
+        </section>
+
+        <section id='projects'>
+          <Projects loading={loading} />
+        </section>
+
+        <section id='contact'>
+          <Contact loading={loading} />
+        </section>
+
+       
 
 
-      <Footer />
+
+
+        <Footer />
 
       </SkeletonTheme>
     </div>

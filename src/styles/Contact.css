@@ -67,14 +67,16 @@
     cursor: pointer;
 }
 
-.contact-page .contact .contact-form .disabled-btn{
-    background-color: #152c42;
-    cursor: wait;
-}
+
 
 .contact-page .contact .contact-form button:hover {
     background-color: #2093ff;
     scale: 100.5%;
+}
+
+.contact-page .contact .contact-form .disabled-btn{
+    background-color: #0c1d2d;
+    cursor: wait;
 }
 
 .contact-div {

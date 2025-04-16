@@ -20,6 +20,9 @@ const Navbar = () => {
           <a style={{ textDecoration: 'none', color: 'black' }} href='#about'>
             <li className={activeLink === 'about' ? "active-link" : ''} onClick={() => setActiveLink("about")}>About</li>
           </a>
+          <a style={{ textDecoration: 'none', color: 'black' }} href='#service'>
+            <li className={activeLink === 'service' ? "active-link" : ''} onClick={() => setActiveLink("service")}>Services</li>
+          </a>
           <a style={{ textDecoration: 'none', color: 'black' }} href='#projects'>
             <li className={activeLink === 'projects' ? "active-link" : ''} onClick={() => setActiveLink("projects")}>Projects</li>
           </a>
