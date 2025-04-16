@@ -29,25 +29,29 @@ function App() {
 
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000); // fake delay
+    const timer = setTimeout(() => setLoading(false), 2000); // fake delay
     return () => clearTimeout(timer);
   }, []);
 
   const [time, setTime] = useState(15);
 
   useEffect(() => {
-    if (time > 0) {
+    if (time >= 0) {
       const timer = setTimeout(() => setTime(time - 1), 1000);
+      if(time === 0){
+        setIsTab(true);
+      }
       return () => clearTimeout(timer);
     }
   }, [time])
 
+ 
 
   return (
     <div className="App">
       <SkeletonTheme baseColor="#e0eafa" highlightColor="#87b8f5">
 
-        {(isCelebrating && !isTab && time) ? <div className="confetti"><Confetti /></div> : null}
+        {(isCelebrating && !isTab) ? <div className="confetti"><Confetti /></div> : null}
 
         <section id='home'>
           <Navbar />
@@ -71,7 +75,7 @@ function App() {
         </section>
 
 
-        {(!isTab && time)? <Welcome setIsTab={setIsTab} time={time} /> : null}
+        {!isTab? <Welcome setIsTab={setIsTab} time={time}  loading={loading} /> : null}
 
 
         <Footer />
