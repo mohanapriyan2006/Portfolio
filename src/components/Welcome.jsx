@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import avatar from '../assets/avatar.png'
 import '../styles/Welcome.css';
 
-const Welcome = ({setIsTab}) => {
+const Welcome = ({ setIsTab,time }) => {
+
+   
+
     return (
         <div onClick={() => setIsTab(true)} className="back">
             <div className='welcome-div'>
@@ -13,7 +16,7 @@ const Welcome = ({setIsTab}) => {
                     <p>Get ready to explore a world of <b>passion</b>, <b>projects</b>, and <b>possibilities</b>.</p>
                 </div>
             </div>
-            <p style={{marginTop: "30px"}}>Tab to <b>Close</b></p>
+            <p style={{ marginTop: "30px" }}>Tab to <b>Close</b>({time}s).</p>
         </div>
 
     )

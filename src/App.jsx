@@ -33,13 +33,21 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const [time, setTime] = useState(15);
+
+  useEffect(() => {
+    if (time > 0) {
+      const timer = setTimeout(() => setTime(time - 1), 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [time])
 
 
   return (
     <div className="App">
       <SkeletonTheme baseColor="#e0eafa" highlightColor="#87b8f5">
 
-        {(isCelebrating && !isTab)? <div className="confetti"><Confetti /></div> : null}
+        {(isCelebrating && !isTab && time) ? <div className="confetti"><Confetti /></div> : null}
 
         <section id='home'>
           <Navbar />
@@ -63,7 +71,7 @@ function App() {
         </section>
 
 
-        {!isTab ? <Welcome setIsTab={setIsTab} /> : null}
+        {(!isTab && time)? <Welcome setIsTab={setIsTab} time={time} /> : null}
 
 
         <Footer />
