@@ -7,9 +7,10 @@ import '../styles/Projects.css';
 import eshop from '../assets/eshop.png';
 import mews from '../assets/mews.png';
 import postup from '../assets/postup.png';
-import portfolio from '../assets/portfolio.png';
-import greenmart from '../assets/greenmart.png';
+import portfolioD from '../assets/portfolio.png';
+import greenmartD from '../assets/greenmart.png';
 import artiction from '../assets/artiction.png';
+import artictionD from '../assets/artiction-design.png';
 import artictionDesign from '../assets/artiction-design.pdf';
 import portfolioDesign from '../assets/portfolio-design.pdf';
 import greenmartDesign from '../assets/greenmart-design.pdf';
@@ -27,20 +28,34 @@ const Projects = ({ loading }) => {
 
   const designData = [
     {
-      img: artiction,
+      img: artictionD,
       pdf: artictionDesign,
     },
     {
-      img: portfolio,
+      img: portfolioD,
       pdf: portfolioDesign,
     },
     {
-      img: greenmart,
+      img: greenmartD,
       pdf: greenmartDesign,
     }
   ];
 
   const projectData = [
+    {
+      title: 'Artiction – Art Gallery & Auction Platform',
+      img: artiction,
+      site: 'https://artiction.netlify.app/',
+      repo: 'https://github.com/mohanapriyan2006/Artiction',
+      techStack: 'Java, Spring Boot, Hibernate, MySQL, React.js, TailwindCSS, JavaScript, HTML',
+      description: [
+        'Developed a full-stack web application enabling artists to showcase artworks and conduct live auctions for buyers.',
+        'Designed a user-centric interface for exploring art galleries, placing bids, and managing profiles across roles (Artist, Buyer, Admin).',
+        'Implemented secure user authentication using JWT and role-based access control for platform features.',
+        'Built RESTful APIs for real-time auction updates, artwork management, and bidding history using Spring Boot.',
+        'Integrated React.js with backend APIs for seamless bid placement, auction countdown timers, and responsive gallery views.'
+      ]
+    },
     {
       title: 'eShop – E-commerce Platform',
       img: eshop,
@@ -88,12 +103,12 @@ const Projects = ({ loading }) => {
         {projectData.map((project, index) => (
           <div className="project" key={index}>
             {loading ?
-              <Skeleton height={300} width={400} borderRadius={10}/> : <a href={project.site} target="_blank" rel="noopener noreferrer">
+              <Skeleton height={300} width={400} borderRadius={10} /> : <a href={project.site} target="_blank" rel="noopener noreferrer">
                 <img src={project.img} alt={`${project.title} Preview`} />
               </a>}
             <div className="content">
-              <p className="title">{project.title}</p>
-              <p className="sub-title">Tech Stack: {loading ?
+              <p className="title ">{project.title}</p>
+              <p className="sub-title ">Tech Stack: {loading ?
                 <Skeleton height={25} width={200} borderRadius={5} />
                 : project.techStack}</p>
               <ul>
@@ -149,7 +164,7 @@ const Projects = ({ loading }) => {
           {designData.map((item, index) => (
             <SwiperSlide key={index} >
               {loading ?
-                <Skeleton height={300} maxWidth={600} borderRadius={10}/> : <a href={item.pdf} target="_blank" rel="noopener noreferrer" >
+                <Skeleton height={300} maxWidth={600} borderRadius={10} /> : <a href={item.pdf} target="_blank" rel="noopener noreferrer" >
                   <img
                     className='design-img'
                     src={item.img}

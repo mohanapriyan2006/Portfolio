@@ -7,7 +7,6 @@ import whyus2 from '../assets/whyus2.jpg';
 import '../styles/Service.css';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import { height, width } from '@fortawesome/free-solid-svg-icons/fa0';
 
 const services = [
     {
