@@ -28,11 +28,6 @@ function App() {
   }, []);
 
 
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000); // fake delay
-    return () => clearTimeout(timer);
-  }, []);
-
   const [time, setTime] = useState(15);
 
   useEffect(() => {
@@ -75,7 +70,7 @@ function App() {
         </section>
 
 
-        {!isTab? <Welcome setIsTab={setIsTab} time={time}  loading={loading} /> : null}
+        {!isTab? <Welcome setIsTab={setIsTab} time={time}  loading={loading}  setLoading={setLoading} /> : null}
 
 
         <Footer />
