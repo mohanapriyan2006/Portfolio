@@ -82,6 +82,7 @@ h4 {
 
 .projects .project .content {
     padding-top: 1.5rem;
+    width: 70%;
 }
 
 .projects .project .content .sub-title {
@@ -144,6 +145,7 @@ h4 {
     .project .content {
         scale: 90%;
         margin-top: -50px;
+        width: fit-content;
     }
 
     .projects .title-div {
@@ -163,6 +165,7 @@ h4 {
         scale: 90%;
         margin-top: -50px;
         margin-left: 20px;
+        width: fit-content;
     }
 
     .designs img {

@@ -43,7 +43,7 @@ const Projects = ({ loading }) => {
 
   const projectData = [
     {
-      title: 'Artiction – Art Gallery & Auction Platform',
+      title: 'Artiction – Art Gallery & Auction Platform (Full Stack Website)',
       img: artiction,
       site: 'https://artiction.netlify.app/',
       repo: 'https://github.com/mohanapriyan2006/Artiction',
