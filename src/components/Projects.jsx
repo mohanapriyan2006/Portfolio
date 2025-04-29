@@ -7,10 +7,13 @@ import '../styles/Projects.css';
 import eshop from '../assets/eshop.png';
 import mews from '../assets/mews.png';
 import postup from '../assets/postup.png';
+import evaAi from '../assets/eva-ai.png';
 import portfolioD from '../assets/portfolio.png';
 import greenmartD from '../assets/greenmart.png';
 import artiction from '../assets/artiction.png';
 import artictionD from '../assets/artiction-design.png';
+import evaAiD from '../assets/eva-ai-design.png';
+import evaAiDesign from '../assets/eva-ai-design.pdf';
 import artictionDesign from '../assets/artiction-design.pdf';
 import portfolioDesign from '../assets/portfolio-design.pdf';
 import greenmartDesign from '../assets/greenmart-design.pdf';
@@ -32,13 +35,17 @@ const Projects = ({ loading }) => {
       pdf: artictionDesign,
     },
     {
+      img: evaAiD,
+      pdf: evaAiDesign,
+    },
+    {
       img: portfolioD,
       pdf: portfolioDesign,
     },
     {
       img: greenmartD,
       pdf: greenmartDesign,
-    }
+    },
   ];
 
   const projectData = [
@@ -51,10 +58,21 @@ const Projects = ({ loading }) => {
       description: [
         'Developed a full-stack web application enabling artists to showcase artworks and conduct live auctions for buyers.',
         'Designed a user-centric interface for exploring art galleries, placing bids, and managing profiles across roles (Artist, Buyer, Admin).',
-        'Implemented secure user authentication using JWT and role-based access control for platform features.',
         'Built RESTful APIs for real-time auction updates, artwork management, and bidding history using Spring Boot.',
-        'Integrated React.js with backend APIs for seamless bid placement, auction countdown timers, and responsive gallery views.'
       ]
+    },
+    {
+      title: 'Eva – Personal AI Voice & Chat Assistant',
+      img: evaAi,
+      site: 'https://eva-ai-assistant.vercel.app/',
+      repo: 'https://github.com/mohanapriyan2006/Ai-voice-assistant',
+      techStack: 'React.js, Tailwind CSS, AI API, HTML',
+      description: [
+        'Built an intelligent personal assistant with both voice and chat capabilities using React and Web Speech.',
+        'Integrated AI APIs to enable natural language understanding and interactive conversations.',
+        'Crafted a responsive, modern UI with Tailwind CSS for seamless usability across devices.',
+        'Enabled real-time voice recognition and speech synthesis for hands-free user interaction.',
+      ],
     },
     {
       title: 'eShop – E-commerce Platform',
