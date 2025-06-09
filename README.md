@@ -1,12 +1,23 @@
-# React + Vite
+# Mohanapriyan M – Full Stack Developer & UI/UX Enthusiast 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A passionate developer crafting immersive web experiences with Java, Spring Boot, React.js, and cutting-edge AI & Data Science. Driven by innovation and attention to detail, I build scalable solutions that look great and perform even better.
 
-Currently, two official plugins are available:
+## 🔧 What I Do
+- Build **responsive, intuitive web apps** with a clean and modern UI
+- Design and implement **Backend APIs** using Spring Boot & REST
+- Integrate **AI and data-driven features** into interactive interfaces
+- Craft seamless **frontend experiences** with React.js and Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💼 Projects & Impact
+- Showcase upcoming works in a **live project section** featuring demos, code links, and tech descriptions
+- Highlight **portfolio case studies** to illustrate problem-solving and user flow improvements
 
-## Expanding the ESLint configuration
+## 📬 Let’s Connect
+I’m open to exciting opportunities and collaborations. Reach out:
+- 🌐 Portfolio: [mohanapriyan.netlify.app](https://mohanapriyan.netlify.app/)
+- 📧 Email: mohanapriyan.m2006@gmail.com
+- 🤝 LinkedIn: [Mohanapriyan M](https://www.linkedin.com/in/mohanapriyan-m2006/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+> *“Clean code, bold design, and a dash of AI—a creator on a mission to build the future.”*
