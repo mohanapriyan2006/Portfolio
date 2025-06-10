@@ -1,4 +1,4 @@
-# Mohanapriyan M – Full Stack Developer & UI/UX & AI Enthusiast 🚀
+# 👨‍💻 Mohanapriyan M – Full Stack Developer & UI/UX & AI Enthusiast 🚀
 
 ##  🔗 reach me out : [Portfolio](https://mohanapriyan.netlify.app/)
 
