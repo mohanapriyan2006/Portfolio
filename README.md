@@ -1,6 +1,6 @@
 # 👨‍💻 Mohanapriyan M – Full Stack Developer & UI/UX & AI Enthusiast 🚀
 
-##  🔗 reach me out : [Portfolio](https://mohanapriyan.netlify.app/)
+##  🔗 reach me : [Portfolio](https://mohanapriyan.netlify.app/)
 
 A passionate developer crafting immersive web experiences with Java, Spring Boot, React.js, and cutting-edge AI & Data Science. Driven by innovation and attention to detail, I build scalable solutions that look great and perform even better.
 
